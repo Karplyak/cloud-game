@@ -36,7 +36,7 @@ type Server struct {
 }
 
 const pingServerTemp = "https://%s.%s/echo"
-const devPingServer = "http://localhost:9000/echo"
+const devPingServer = "http://192.168.0.10:9001/echo"
 
 var upgrader = websocket.Upgrader{}
 
