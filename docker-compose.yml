@@ -11,7 +11,7 @@ services:
       - MESA_GL_VERSION_OVERRIDE=3.3
     # network_mode: "host"
     command: >
-      bash -c "Xvfb :99 & coordinator --v=5 & worker --coordinatorhost localhost:8000"
+      bash -c "Xvfb :99 & coordinator --v=5 & worker --coordinatorhost 192.168.0.10:8001"
     ports:
       - "8001:8001"
       - "9001:9001"
